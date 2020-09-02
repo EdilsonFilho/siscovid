@@ -9,5 +9,5 @@ class SchedulingSerializer(serializers.ModelSerializer):
     
     class Meta: 
         model = Scheduling
-        exclude = ['querycovid']
+        exclude = []
     
