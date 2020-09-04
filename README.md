@@ -62,10 +62,11 @@ Como é uma API, queremos gerar rotas e disponibilizar como JSON
 
 
 ### Endpoints importantes
-
-GET 'http://localhost:8000/scheduling/'
-POST 'http://localhost:8000/scheduling/create'
-PUT 'http://localhost:8000/scheduling/<id>/'
+```
+GET http://localhost:8000/scheduling/
+POST http://localhost:8000/scheduling/create
+PUT http://localhost:8000/scheduling/<id>/
+```
   
 ### Para testar
 -Usei Insomnia
