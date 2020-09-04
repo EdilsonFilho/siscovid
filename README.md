@@ -6,30 +6,35 @@ Criando o ambiente e o projeto:
 -importante verficar as extensoes e configurar o interpretador do projeto. Usei python 3.6.9
 
 ### criando o diretorio e encapsulando com virtualenv
-'mkdir siscovid'
-'cd siscovid'
-'virtualenv venv --python=python3'
-'source venv/bin/activate'
+```
+mkdir siscovid
+cd siscovid
+virtualenv venv --python=python3
+source venv/bin/activate
+```
 
 ### instando o django
-'pip install django'
-'django-admin startproject siscovid'
+```
+pip install django
+django-admin startproject siscovid
+```
 
 ### entrando no projeto
-'cd siscovid'
-'python manage.py' (para rodar o servidor que pode ser acessado em localhost:8000)
+```cd siscovid```
+```python manage.py```
+(para rodar o servidor que pode ser acessado em localhost:8000)
 
 ### inciando a aplicacao
-'python mange.py startapp siscovid'
+`python mange.py startapp siscovid`
 -criei na model os campos que desejo
 -fui em settigns e fiz :
 			installed_Apps  add 'scheduling'
 			language: pt-br
-'python manage.py migrate'
-'python manage.py makemigrations' (vai aparecer o __initial__)
-'pyton manege.py migrate' (aplica a estrutura no banco de dados)
+python manage.py migrate
+`python manage.py makemigrations` (vai aparecer o __initial__)
+`pyton manege.py migrate` (aplica a estrutura no banco de dados)
 
-'python manage.py createsuperuse'r (criando super usuario)
+`python manage.py createsuperuser` (criando super usuario)
 -pus as credenciais pedidas
 -Para verificar subi o servidor e verifiquei se tudo estava ok, Done!
 
@@ -46,9 +51,9 @@ Como é uma API, queremos gerar rotas e disponibilizar como JSON
 -e add: from scheduling.views etc....
 
 ### instalando rest_framework
-'pip install djangorestframework'
--colocar em settings >> installed_apps o 'rest_framework' 
-[veja mais em:](https://www.django-rest-framework.org/)
+`pip install djangorestframework`
+-colocar em settings >> installed_apps o `rest_framework` 
+[veja mais sobre django resframework aqui](https://www.django-rest-framework.org/)
 -Usei insomnia para fazer teste usando as rotas que criei, com servidor em operacao. Tudo ok!
 -o proprio django restframework ja me permite testar também as rotas, por exemplo GET, POST etc.
 
