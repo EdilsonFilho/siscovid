@@ -80,7 +80,7 @@ Como é uma API, queremos gerar rotas e disponibilizar como JSON
 -o proprio django restframework ja me permite testar também as rotas, por exemplo GET, POST etc.
 
 ### Ainda na aplicação
--Desenvolvi a aplicação, usando a ideia de serializer etc. 
+-Desenvolvi a aplicação, usando a ideia de serializer, restframework, viewsets etc. 
 
 
 ### Endpoints importantes
