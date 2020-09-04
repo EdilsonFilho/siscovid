@@ -22,16 +22,25 @@ django-admin startproject siscovid
 ### entrando no projeto
 ```cd siscovid```
 ```python manage.py```
+
 (para rodar o servidor que pode ser acessado em localhost:8000)
 
 ### iniciando a aplicação
 `python mange.py startapp siscovid`
 -criei na model os campos que desejo
+
 -fui em settigns e fiz :
+
 			installed_Apps  add 'scheduling'
+			
 			language: pt-br
+			
 python manage.py migrate
-`python manage.py makemigrations` (vai aparecer o __initial__)
+`python manage.py makemigrations`
+
+(vai aparecer o __initial__)
+
+
 `pyton manege.py migrate` (aplica a estrutura no banco de dados)
 
 `python manage.py createsuperuser` (criando super usuario)
@@ -45,16 +54,23 @@ python manage.py migrate
 Como é uma API, queremos gerar rotas e disponibilizar como JSON
 
 -Fui em views e :
+
 	'from .models import scheduling'
+	
 (e criei os metodos necessários)
+
 -em urls.py add os paths das views
+
 -e add: from scheduling.views etc....
 
 ### instalando rest_framework
 `pip install djangorestframework`
 -colocar em settings >> installed_apps o `rest_framework` 
+
 [veja mais sobre django resframework aqui](https://www.django-rest-framework.org/)
+
 -Usei insomnia para fazer teste usando as rotas que criei, com servidor em operacao. Tudo ok!
+
 -o proprio django restframework ja me permite testar também as rotas, por exemplo GET, POST etc.
 
 ### Ainda na aplicação
@@ -70,6 +86,7 @@ PUT http://localhost:8000/scheduling/<id>/
   
 ### Para testar
 -Usei Insomnia
+
 -Criei um projeto chamado "medico",mas na verdade é um sistema em Python para cadastro e login de usuarios que usam as rotas listadas acima.
 
 
