@@ -10,7 +10,7 @@ Criando o ambiente e o projeto:
 mkdir siscovid
 cd siscovid
 virtualenv venv --python=python3
-source venv/bin/activate
+source venv/bin/activate    #para ativar o ambientel do venv
 ```
 
 ### instalando o django
@@ -20,10 +20,10 @@ django-admin startproject siscovid
 ```
 
 ### entrando no projeto
-```cd siscovid```
-```python manage.py```
+```cd siscovid
+python manage.py #(para rodar o servidor que pode ser acessado em localhost:8000)
+```
 
-(para rodar o servidor que pode ser acessado em localhost:8000)
 
 ### iniciando a aplicação
 `python mange.py startapp siscovid`
@@ -34,20 +34,21 @@ django-admin startproject siscovid
 ```
 installed_Apps  add 'scheduling'
 
-language: pt-br
+language: 'pt-br'
 ```
 			
 ```
 python manage.py migrate
-python manage.py makemigrations
+python manage.py makemigrations   #(vai aparecer o __initial__)
 ```
 
-(vai aparecer o __initial__)
 
 
-`pyton manege.py migrate` (aplica a estrutura no banco de dados)
 
-`python manage.py createsuperuser` (criando super usuario)
+`pyton manege.py migrate     #(aplica a estrutura no banco de dados)` 
+
+`python manage.py createsuperuser   #(criando super usuario)` 
+
 -pus as credenciais pedidas
 
 -Para verificar subi o servidor e verifiquei se tudo estava ok, Done!
@@ -56,22 +57,21 @@ python manage.py makemigrations
 	 
 ```add from .models import scheduling```
 
-(com isso eu pude ter a capicidade de add registros, para alimentar dados na API)
 
 Como é uma API, queremos gerar rotas e disponibilizar como JSON
 
 -Fui em views e :
 `from .models import scheduling`
 	
-(e criei os metodos necessários)
+-criei os metodos necessários
 
 -em urls.py add os paths das views
 
 -e add: from scheduling.views etc....
 
 ### instalando rest_framework
-`pip install djangorestframework`
--colocar em settings >> installed_apps o `rest_framework` 
+`pip install djangorestframework   #colocar em settings >> installed_apps o 'rest_framework'`
+ 
 
 [veja mais sobre django resframework aqui](https://www.django-rest-framework.org/)
 
