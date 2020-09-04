@@ -10,7 +10,7 @@ Criando o ambiente e o projeto:
 mkdir siscovid
 cd siscovid
 virtualenv venv --python=python3
-source venv/bin/activate    #para ativar o ambientel do venv
+source venv/bin/activate    # para ativar o ambientel do venv
 ```
 
 ### instalando o django
@@ -21,7 +21,7 @@ django-admin startproject siscovid
 
 ### entrando no projeto
 ```cd siscovid
-python manage.py #(para rodar o servidor que pode ser acessado em localhost:8000)
+python manage.py         # (para rodar o servidor que pode ser acessado em localhost:8000)
 ```
 
 
@@ -39,15 +39,15 @@ language: 'pt-br'
 			
 ```
 python manage.py migrate
-python manage.py makemigrations   #(vai aparecer o __initial__)
+python manage.py makemigrations   # vai aparecer o __initial__
 ```
 
 
 
 
-`pyton manege.py migrate     #(aplica a estrutura no banco de dados)` 
+`pyton manege.py migrate     # aplica a estrutura no banco de dados` 
 
-`python manage.py createsuperuser   #(criando super usuario)` 
+`python manage.py createsuperuser   # criando super usuario` 
 
 -pus as credenciais pedidas
 
@@ -70,7 +70,7 @@ Como é uma API, queremos gerar rotas e disponibilizar como JSON
 -e add: from scheduling.views etc....
 
 ### instalando rest_framework
-`pip install djangorestframework   #colocar em settings >> installed_apps o 'rest_framework'`
+`pip install djangorestframework   # colocar em settings >> installed_apps o 'rest_framework'`
  
 
 [veja mais sobre django resframework aqui](https://www.django-rest-framework.org/)
