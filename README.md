@@ -13,7 +13,7 @@ virtualenv venv --python=python3
 source venv/bin/activate
 ```
 
-### instando o django
+### instalando o django
 ```
 pip install django
 django-admin startproject siscovid
@@ -24,7 +24,7 @@ django-admin startproject siscovid
 ```python manage.py```
 (para rodar o servidor que pode ser acessado em localhost:8000)
 
-### inciando a aplicacao
+### iniciando a aplicação
 `python mange.py startapp siscovid`
 -criei na model os campos que desejo
 -fui em settigns e fiz :
