@@ -31,12 +31,16 @@ django-admin startproject siscovid
 
 -fui em settigns e fiz :
 
-			installed_Apps  add 'scheduling'
+```
+installed_Apps  add 'scheduling'
+
+language: pt-br
+```
 			
-			language: pt-br
-			
+```
 python manage.py migrate
-`python manage.py makemigrations`
+python manage.py makemigrations
+```
 
 (vai aparecer o __initial__)
 
@@ -45,17 +49,19 @@ python manage.py migrate
 
 `python manage.py createsuperuser` (criando super usuario)
 -pus as credenciais pedidas
+
 -Para verificar subi o servidor e verifiquei se tudo estava ok, Done!
 
 -Fui no admin.py e:
-	 add from .models import scheduling
+	 
+```add from .models import scheduling```
+
 (com isso eu pude ter a capicidade de add registros, para alimentar dados na API)
 
 Como é uma API, queremos gerar rotas e disponibilizar como JSON
 
 -Fui em views e :
-
-	'from .models import scheduling'
+`from .models import scheduling`
 	
 (e criei os metodos necessários)
 
